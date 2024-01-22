@@ -5,7 +5,8 @@ function esPrimo (numero) {
         resto = numero % i
         if (resto === 0) {
             message = `${numero} no es un número primo.`
+            return false
         }
     }
-    return message
+    return true
 }
